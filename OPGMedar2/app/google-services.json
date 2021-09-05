@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "783439074797",
-    "firebase_url": "https://opg-medar-default-rtdb.firebaseio.com",
-    "project_id": "opg-medar",
-    "storage_bucket": "opg-medar.appspot.com"
+    "project_number": "190139791327",
+    "firebase_url": "https://opg-medar-895c0-default-rtdb.firebaseio.com",
+    "project_id": "opg-medar-895c0",
+    "storage_bucket": "opg-medar-895c0.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:783439074797:android:cec724eea1d766ae85c3e4",
+        "mobilesdk_app_id": "1:190139791327:android:583f95128ffdceaf45f66a",
         "android_client_info": {
           "package_name": "com.example.opgmedar"
         }
       },
       "oauth_client": [
         {
-          "client_id": "783439074797-sm2nalh6ruh5kq68n9aa83q75l93f95k.apps.googleusercontent.com",
+          "client_id": "190139791327-q3fqbu7dfl8ft529ujmsmtvg5qqkcd5h.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyCqz7N_BebhHogTUpag8wZ2doy9xFdjts8"
+          "current_key": "AIzaSyAClR8YdlKOI7-zf3hL9mUb2dn8tRc--Zs"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "783439074797-sm2nalh6ruh5kq68n9aa83q75l93f95k.apps.googleusercontent.com",
+              "client_id": "190139791327-q3fqbu7dfl8ft529ujmsmtvg5qqkcd5h.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

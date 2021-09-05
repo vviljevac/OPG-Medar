@@ -185,7 +185,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/btn_finish"
-            android:text="FINISH"
+            android:text="POTVRDI"
             android:textColor="@color/colorPrimary"
             android:textStyle="bold"
             android:textSize="15sp"

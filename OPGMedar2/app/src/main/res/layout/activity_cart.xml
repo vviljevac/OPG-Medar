@@ -66,7 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/btn_order"
-        android:text="ORDER"
+        android:text="NARUČI"
         android:textColor="@color/colorPrimary"
         app:layout_constraintTop_toTopOf="@id/panel"
         app:layout_constraintRight_toRightOf="@id/panel"

@@ -34,7 +34,7 @@
             android:textStyle="bold"
             android:gravity="center"
             android:layout_gravity="center_vertical"
-            android:text="SHOP"
+            android:text="TRGOVINA"
             android:textColor="@color/colorPrimaryDark"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
