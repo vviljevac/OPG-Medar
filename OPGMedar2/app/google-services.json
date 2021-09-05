@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "783439074797",
+    "firebase_url": "https://opg-medar-default-rtdb.firebaseio.com",
+    "project_id": "opg-medar",
+    "storage_bucket": "opg-medar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:783439074797:android:cec724eea1d766ae85c3e4",
+        "android_client_info": {
+          "package_name": "com.example.opgmedar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "783439074797-sm2nalh6ruh5kq68n9aa83q75l93f95k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCqz7N_BebhHogTUpag8wZ2doy9xFdjts8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "783439074797-sm2nalh6ruh5kq68n9aa83q75l93f95k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

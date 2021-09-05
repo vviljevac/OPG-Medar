@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderActivity"
+    android:id="@+id/mainLayout_order">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:id="@+id/panel_order"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_back_order"
+            android:src="@drawable/ic_baseline_navigate_before_24"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintRight_toLeftOf="@id/tv_order"
+            app:layout_constraintTop_toTopOf="@id/panel_order"
+            app:layout_constraintBottom_toBottomOf="@id/panel_order"
+            />
+
+
+        <TextView
+            android:id="@+id/tv_order"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="NARUDŽBA"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <EditText
+        android:id="@+id/et_firstname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ime"
+        android:textColorHint="@color/orange"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@id/panel_order"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/colorPrimary"
+        />
+
+    <EditText
+        android:id="@+id/et_lastname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="Prezime"
+        android:textColorHint="@color/orange"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/et_firstname"
+        android:backgroundTint="@color/colorPrimary"
+        />
+
+    <EditText
+        android:id="@+id/et_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPostalAddress"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Adresa Dostave"
+        android:textColorHint="@color/orange"
+        app:layout_constraintTop_toBottomOf="@id/et_lastname"
+        android:backgroundTint="@color/colorPrimary"
+        />
+
+    <CheckBox
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cb_address"
+        app:layout_constraintTop_toBottomOf="@id/et_address"
+        app:layout_constraintBottom_toTopOf="@id/et_postal"
+        android:text="Želim pokupiti narudžbu u poslovnici"
+        android:textColor="@color/orange"
+        android:textSize="16sp"
+        android:buttonTint="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="20dp"
+        />
+    <EditText
+        android:id="@+id/et_postal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Poštanski broj"
+        android:textColorHint="@color/orange"
+        android:inputType="phone"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@id/cb_address"
+        android:backgroundTint="@color/colorPrimary"
+        android:maxLength="5"
+        />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="E-mail Adresa"
+        android:textColorHint="@color/orange"
+        app:layout_constraintTop_toBottomOf="@id/et_postal"
+        android:backgroundTint="@color/colorPrimary"
+        />
+    <EditText
+        android:id="@+id/et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:hint="Broj Mobitela"
+        android:textColorHint="@color/orange"
+        android:backgroundTint="@color/colorPrimary"
+        app:layout_constraintTop_toBottomOf="@id/et_email"
+        />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:id="@+id/panel_total_price"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <TextView
+            android:id="@+id/tv_total_order"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintTop_toTopOf="@id/tv_total_price_order"
+            app:layout_constraintBottom_toBottomOf="@id/tv_total_price_order"
+            app:layout_constraintLeft_toLeftOf="@id/panel_total_price"
+            android:text="Ukupna cijena narudžbe:"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_width="wrap_content"
+
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="10dp"/>
+
+        <TextView
+            android:id="@+id/tv_total_price_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0.00 kn"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toRightOf="@id/tv_total_order"
+            app:layout_constraintTop_toTopOf="@id/panel_total_price"
+            app:layout_constraintBottom_toBottomOf="@id/panel_total_price"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:layout_marginRight="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btn_finish"
+            android:text="FINISH"
+            android:textColor="@color/colorPrimary"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:fadingEdge="vertical"
+            android:backgroundTint="@color/colorPrimaryDark"
+            app:layout_constraintLeft_toRightOf="@id/tv_total_price_order"
+            app:layout_constraintRight_toRightOf="@id/panel_total_price"
+            app:layout_constraintTop_toTopOf="@id/panel_total_price"
+            app:layout_constraintBottom_toBottomOf="@id/panel_total_price"
+            android:layout_marginLeft="10dp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

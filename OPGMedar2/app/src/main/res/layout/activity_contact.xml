@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellowish">
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:id="@+id/panel_contact_top"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent">
+
+        <ImageView
+            android:id="@+id/iv_back_contact"
+            android:src="@drawable/ic_baseline_navigate_before_24"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            app:layout_constraintRight_toLeftOf="@id/tv_contact"
+            app:layout_constraintTop_toTopOf="@id/panel_contact_top"
+            app:layout_constraintBottom_toBottomOf="@id/panel_contact_top" />
+
+
+        <TextView
+            android:id="@+id/tv_contact"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_gravity="center_vertical"
+            android:text="OPG MEDAR"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginLeft="40dp"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent"
+    android:id="@+id/informations"
+    android:orientation="horizontal"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+app:layout_constraintBottom_toTopOf="@id/map"
+    android:layout_marginTop="56dp"
+    >
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Adresa: Medina 1, Medulin, Hrvatska"
+        app:layout_constraintTop_toTopOf="@id/informations"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/tv_bespla"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_address"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="BESPLATNO SAVJETOVALIŠTE:"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_telefon"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_bespla"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:text="Telefon: +385 97 750 3012, +385 91 234 5678"
+        android:textColor="@color/black"
+        />
+    <TextView
+        android:id="@+id/tv_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_telefon"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:textStyle="bold"
+        android:text="E-mail: info@medar.hr"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_marketing"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_email"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Odjel prodaje i marketinga:"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        />
+    <TextView
+        android:id="@+id/tv_hrvoje"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_marketing"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:text="Hrvoje Medar, struč.spec.oec"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        />
+    <TextView
+        android:id="@+id/tv_proizv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_hrvoje"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Uzgoj, proizvodnja i razvoj:"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        />
+    <TextView
+        android:id="@+id/tv_zdenko"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/tv_proizv"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="40dp"
+        android:text="Zdenko Medar, dipl.oec, Siniša Medar"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        />
+</androidx.constraintlayout.widget.ConstraintLayout>
+<fragment
+    android:id="@+id/map"
+    android:name="com.google.android.gms.maps.SupportMapFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ContactActivity"
+    android:layout_marginTop="336dp"
+    android:layout_marginBottom="56dp"
+    app:layout_constraintBottom_toTopOf="@id/panel_contact"
+    />
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_height="?android:attr/actionBarSize"
+        android:layout_width="match_parent"
+        android:id="@+id/panel_contact"
+        android:orientation="horizontal"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/iv_facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/facebook"
+            app:layout_constraintTop_toTopOf="@id/panel_contact"
+            app:layout_constraintBottom_toBottomOf="@id/panel_contact"
+            app:layout_constraintLeft_toRightOf="@id/iv_instagram"
+            app:layout_constraintRight_toLeftOf="@id/iv_twitter"
+            />
+        <ImageView
+            android:id="@+id/iv_twitter"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/twitter"
+            app:layout_constraintLeft_toRightOf="@id/iv_facebook"
+            app:layout_constraintRight_toRightOf="@id/panel_contact"
+            />
+        <ImageView
+            android:id="@+id/iv_instagram"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/instagram"
+            app:layout_constraintLeft_toLeftOf="@id/panel_contact"
+            app:layout_constraintRight_toLeftOf="@id/iv_facebook"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
